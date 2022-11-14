@@ -1,0 +1,72 @@
+.container-galeri {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 20px 0 20px;
+}
+
+.container-galeri .heading-galeri {
+  width: 50%;
+  padding-bottom: 50px;
+}
+.container-galeri .heading-galeri h3 {
+  font-size: 3em;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #222;
+}
+
+.container-galeri .heading-galeri h3 span {
+  font-weight: 100;
+  font-weight: bolder;
+}
+.container-galeri .box-galeri {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.kotak {
+  overflow: hidden;
+}
+
+#gambar {
+  transition: 0.5s;
+}
+
+#gambar:hover {
+  transform: scale(1.2);
+}
+
+.container-galeri .box-galeri .dream-galeri {
+  display: flex;
+  flex-direction: column;
+  width: 32.5%;
+  cursor: pointer;
+}
+
+.container-galeri .box-galeri .dream-galeri img {
+  width: 100%;
+  padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 769px) {
+  .container-galeri .box-galeri {
+    flex-direction: column;
+  }
+
+  .container-galeri .box-galeri .dream-galeri {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 643px) {
+  .container-galeri .heading-galeri {
+    width: 100%;
+  }
+  .container-galeri .heading-galeri h3 {
+    font-size: 1rem;
+  }
+}
